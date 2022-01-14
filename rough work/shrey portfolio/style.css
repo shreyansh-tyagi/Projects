@@ -1,0 +1,209 @@
+*{padding: 0; margin:0 ; box-sizing: border-box;}
+header{
+width: 100%;
+height: 100vh;
+position: relative;
+}
+nav{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 100px;
+    font-family: 'signika', sans-serif;
+
+}
+.logo{
+    font-size: 50px;
+    letter-spacing: 3px;
+    color: #222f3e;
+    font-family:cursive;
+   
+
+}
+.menu a{ 
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: 20px;
+    color: black;
+    font-family:cursive;
+
+
+}
+.menu a:hover{
+    background: transparent;
+    transition: 0.4s;
+    color:whitesmoke;
+
+}
+.menu a:last-child{
+    background-color: darkcyan;
+    border-radius: 8px;
+    letter-spacing: 2px;
+    color:whitesmoke;
+}
+.menu a:last-child:hover{
+    color:black;
+}
+.heading{
+    max-width: 500px;
+    position: absolute;
+    top: 30%;
+    left: 10%;
+   
+    animation-name: zoomIn;
+    animation-duration: 2s;
+    
+}
+@keyframes zoomIn {
+    from {
+      opacity: 0;
+      transform: scale3d(0.3, 0.3, 0.3);
+    }
+  
+    50% {
+      opacity: 1;
+    }
+  }
+  
+  
+.heading h1{
+    font-size: 3em;
+    color: #222f3e;
+    font-family:cursive;
+    z-index: -1;
+}
+ .heading p{
+     font-size: 20px;
+     margin-bottom: 30px;
+     font-family:cursive;
+     z-index: -1;
+ }
+ .heading a{
+     text-decoration: none;
+     background:darkcyan ;
+     color: white;
+     font-size: 20px;
+     padding: 10px 20px;
+     font-family: cursive;
+     border-radius: 8px;
+ }
+ .heading a:hover{
+    background: transparent;
+    transition: 0.4s;
+    border: 1px solid black;
+    color:black;
+ }
+
+ #more{
+     background: transparent;
+     color: darkcyan;
+     box-shadow: 3px 0px 0px grey;
+ }
+
+ .icon{
+     position: fixed;
+     top: 50%;
+     left:0;
+     display: flex;
+     flex-direction:column;
+    transform-origin: top center;
+    animation-name: swing;
+    animation-duration: 2s;
+    
+ }
+
+ @keyframes swing {
+    20% {
+      transform: rotate3d(0, 0, 1, 15deg);
+    }
+  
+    40% {
+      transform: rotate3d(0, 0, 1, -10deg);
+    }
+  
+    60% {
+      transform: rotate3d(0, 0, 1, 5deg);
+    }
+  
+    80% {
+      transform: rotate3d(0, 0, 1, -5deg);
+    }
+  
+    to {
+      transform: rotate3d(0, 0, 1, 0deg);
+    }
+  }
+  
+
+  
+
+  .icon i{
+      color: white;
+      padding: 10px;
+      font-size: 20px;
+      margin: 5px 0px;
+      background: darkcyan;
+  }
+  .icon i:hover{
+      background: transparent;
+      transition: 0.4s;
+      border: 1px solid black;
+      color:black;
+  }
+  .box{
+      width: 60%;
+      height: 70%;
+      position: absolute;
+      top:0;
+      right:0;
+      background:rgba(255,234,167,0.7);
+      z-index: -2;
+      animation-name: slideInDown;
+      animation-duration: 2s;
+  }
+  @keyframes slideInDown {
+    from {
+      transform: translate3d(0, -100%, 0);
+      visibility: visible;
+    }
+  
+    to {
+      transform: translate3d(0, 0, 0);
+    }
+  }
+  
+  #shrey{
+      width: 415px;
+      height: 86%;
+      position: absolute;
+      right:15%;
+      top:10;
+      animation-name: slideInLeft;
+      animation-duration: 2s;
+      
+  }
+ 
+  
+  #back{
+    width: 430px;
+    height: 100%;
+    position: absolute;
+    right:15%;
+    top:0;
+    z-index: -1;
+    animation-name: slideInLeft;
+    animation-duration: 2s;
+    
+  }
+  @keyframes slideInLeft {
+    from {
+      transform: translate3d(-100%, 0, 0);
+      visibility: visible;
+    }
+  
+    to {
+      transform: translate3d(0, 0, 0);
+    }
+  }
