@@ -93,4 +93,4 @@ def excel(i):
         speak('if you want to exit then please speak exit, quite or bye to exit from program')  
         
 wishme()
-excel(i
+excel(i)
