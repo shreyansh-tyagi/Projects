@@ -115,4 +115,4 @@ class gui_start(QMainWindow):
 guiapp=QApplication(sys.argv)
 shrey_gui=gui_start()
 shrey_gui.show()
-exit(guiapp.exec_()
+exit(guiapp.exec_())
