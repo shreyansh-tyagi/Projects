@@ -88,9 +88,5 @@ def excel(i):
             speak('please tell the marks')
             j+=1
             excel1.write(i,j,takeCommand())
-            wb.save("D:\\projects\\excel python\\shrey_excel.xls")
-        i+=1  
-        speak('if you want to exit then please speak exit, quite or bye to exit from program')  
-        
-wishme()
-excel(i)
+
+excel(i
