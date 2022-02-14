@@ -89,4 +89,4 @@ def excel(i):
             j+=1
             excel1.write(i,j,takeCommand())
 
-excel(i
+excel(i)
